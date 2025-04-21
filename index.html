@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antoine Mauroit">
+    <title>CV - Antoine Mauroit</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="action-buttons">
+        <button class="toggle-btn" onclick="toggleDarkMode()">Mode Sombre</button>
+        <button class="print-btn" onclick="printCV()"><i class="fas fa-print"></i> Imprimer</button>
+    </div>
+    
+    <div class="cv-container">
+        <aside class="sidebar">
+            <div class="profile reveal-sidebar">
+                <img src="images/profil.jpeg" alt="Photo de profil">
+                <h2>Antoine Mauroit</h2>
+                <p>Développeur & Spécialiste Réseaux</p>
+            </div>
+            
+            <div class="contact reveal-sidebar">
+                <h3>Contact</h3>
+                <p><strong><i class="fas fa-envelope"></i></strong> antoine.mauroit@gmail.com</p>
+                <p><strong><i class="fas fa-map-marker-alt"></i></strong> Mons, Belgique</p>
+                <p><strong><i class="fab fa-linkedin"></i></strong> Antoine Mauroit</p>
+                <p><strong><i class="fas fa-globe"></i></strong> amauroit.com</p>
+            </div>
+            
+            <div class="skills reveal-sidebar">
+                <h3>Compétences</h3>
+                <ul>
+                    <li class="skill-item">Python, Java, JavaScript</li>
+                    <li class="skill-item">HTML / CSS, React</li>
+                    <li class="skill-item">Solidity, Ethereum</li>
+                    <li class="skill-item">Réseaux et télécommunications</li>
+                    <li class="skill-item">Administration système Linux</li>
+                    <li class="skill-item">Git, CI/CD</li>
+                </ul>
+            </div>
+            
+            <div class="skills reveal-sidebar">
+                <h3>Langues</h3>
+                <ul>
+                    <li class="skill-item">Français (natif)</li>
+                    <li class="skill-item">Anglais (professionnel)</li>
+                    <li class="skill-item">Espagnol (intermédiaire)</li>
+                </ul>
+            </div>
+        </aside>
+        
+        <main class="content">
+            <section class="about reveal-content">
+                <h2>À propos</h2>
+                <p class="about-text">Étudiant en 2e année de Bachelor Informatique à la HEH, spécialisé en réseaux/télécoms avec option développement. Passionné de programmation, blockchain et infrastructures réseau.</p>  
+                <p class="about-text print-only">Solide expertise acquise via mes études, expériences pro et hackathons internationaux. Co-fondateur d'une ASBL blockchain, je cherche à innover et relever des défis techniques.</p>  
+            </section>
+            
+            <section class="experience reveal-content">
+                <h2>Expérience Professionnelle</h2>
+                
+                <div class="experience-item reveal-item">
+                    <h4>Professeur en Programmation – Logiscool</h4>
+                    <p class="date">2024 - Présent</p>
+                    <p class="description">Enseignement de la programmation pour enfants et adolescents.</p>
+                </div>
+                
+                <div class="experience-item reveal-item">
+                    <h4>Stage - Ambassade de France</h4>
+                    <p class="date">Prague, 2018</p>
+                    <p class="description">Assistance technique et support informatique.</p>
+                </div>
+            </section>
+            
+            <section class="education reveal-content">
+                <h2>Formation</h2>
+                
+                <div class="education-item reveal-item">
+                    <h4>Bachelor en Informatique - HEH</h4>
+                    <p class="date">2023 - Présent</p>
+                    <p class="description">Spécialisation en réseaux et télécommunications.</p>
+                </div>
+                
+                <div class="education-item reveal-item">
+                    <h4>Informatique - Université de Mons</h4>
+                    <p class="date">2021 - 2023</p>
+                    <p class="description">Formation en sciences informatiques.</p>
+                </div>
+                
+                <div class="education-item reveal-item">
+                    <h4>Baccalauréat</h4>
+                    <p class="date">2021</p>
+                    <p class="description">Section sciences, option mathématiques renforcées.</p>
+                </div>
+            </section>
+            
+            <section class="projects reveal-content">
+                <h2>Projets & Activités</h2>
+                
+                <div class="project-item reveal-item">
+                    <h4>Co-fondateur - Kryptosphere Belgium</h4>
+                    <p class="date">2024 - Présent</p>
+                    <p class="description">Animation d'une ASBL dédiée à la blockchain.</p>
+                </div>
+                
+                <div class="project-item reveal-item">
+                    <h4>Hackathons Blockchain</h4>
+                    <p class="date">2024 - 2025</p>
+                    <p class="description">ETH Oxford, ETH Amsterdam, ETH Bruxelles.</p>
+                </div>
+            </section>
+        </main>        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

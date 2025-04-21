@@ -1,0 +1,51 @@
+1. checkDarkMode()
+   - Vérifie les préférences système et le localStorage pour activer ou désactiver le mode sombre.
+   - Ajoute un listener pour détecter les changements de préférence système.
+
+2. enableDarkMode()
+   - Active le mode sombre en ajoutant des classes CSS spécifiques aux éléments de la page.
+
+3. disableDarkMode()
+   - Désactive le mode sombre en retirant les classes CSS spécifiques des éléments de la page.
+
+4. toggleDarkMode()
+   - Permet de basculer entre le mode sombre et le mode clair.
+   - Sauvegarde l'état actuel dans le localStorage.
+   - Ajoute une animation de transition.
+
+5. printCV()
+   - Prépare la mise en page pour l'impression.
+   - Désactive temporairement le mode sombre pour l'impression.
+   - Restaure l'état initial après l'impression.
+
+6. preparePrintLayout()
+   - Ajuste temporairement les styles des sections pour l'impression.
+   - Stocke les styles originaux pour les restaurer après l'impression.
+
+7. restoreNormalLayout()
+   - Restaure les styles originaux des sections après l'impression.
+
+8. setupScrollReveal()
+   - Configure les animations ScrollReveal pour les appareils mobiles et tablettes.
+   - Réinitialise les éléments visibles si ScrollReveal est désactivé.
+
+9. handleResponsiveLayout()
+   - Gère la mise en page en fonction de la taille de la fenêtre.
+   - Applique des classes CSS spécifiques pour les vues mobile, tablette et grand écran.
+
+10. DOMContentLoaded Listener
+    - Initialise les fonctionnalités comme le mode sombre et la mise en page responsive.
+    - Configure les animations d'entrée et ScrollReveal.
+
+11. resize Listener
+    - Réinitialise la mise en page et ScrollReveal lors des changements de taille de la fenêtre.
+
+12. beforeprint Listener
+    - Prépare la mise en page pour l'impression.
+
+13. afterprint Listener
+    - Restaure la mise en page normale après l'impression.
+
+14. mousemove Listener
+    - Ajoute un effet de parallaxe au fond en fonction des mouvements de la souris.
+    - Désactivé pour les écrans mobiles et lors de l'impression.

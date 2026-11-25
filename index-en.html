@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antoine Mauroit">
+    <title>CV - Antoine Mauroit</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="action-buttons">
+        <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+        <button class="print-btn" onclick="printCV()"><i class="fas fa-print"></i> Print</button>
+    </div>
+    
+    <div class="cv-container">
+        <aside class="sidebar">
+            <div class="profile reveal-sidebar">
+                <img src="images/profil.jpeg" alt="Profile picture">
+                <h2>Antoine Mauroit</h2>
+                <p>Computer Science Engineering Student | Cybersecurity Internship</p>
+            </div>
+            
+            <div class="contact reveal-sidebar">
+                <h3>Contact</h3>
+                <p><strong><i class="fas fa-phone-alt"></i></strong> +33 7 67 43 16 88</p>
+                <p><strong><i class="fas fa-envelope"></i></strong> antoine.mauroit@gmail.com</p>
+                <p><strong><i class="fas fa-map-marker-alt"></i></strong> Villeneuve d'Ascq, France</p>
+                <p><strong><i class="fab fa-linkedin"></i></strong> Antoine Mauroit</p>
+                <p><strong><i class="fas fa-car"></i></strong> Driving licence (Category B)</p>
+            </div>
+            
+            <div class="skills reveal-sidebar">
+                <h3>Skills</h3>
+                <ul>
+                    <li class="skill-item">Python, Java, JavaScript</li>
+                    <li class="skill-item">HTML / CSS, React</li>
+                    <li class="skill-item">Solidity, Ethereum</li>
+                    <li class="skill-item">Networks and Telecommunications</li>
+                    <li class="skill-item">Linux System Administration</li>
+                    <li class="skill-item">Git</li>
+                </ul>
+            </div>
+            
+            <div class="skills reveal-sidebar">
+                <h3>Languages</h3>
+                <ul>
+                    <li class="skill-item">French (native)</li>
+                    <li class="skill-item">English (professional)</li>
+                    <li class="skill-item">Spanish (intermediate)</li>
+                </ul>
+            </div>
+        </aside>
+        
+        <main class="content">
+            <section class="about reveal-content">
+                <h2>About</h2>
+                <p class="about-text">First-year computer science engineering student at CESI Lille, with a background in networks, telecommunications and software development. Passionate about programming, blockchain and network infrastructure.</p>  
+                <p class="about-text">Solid expertise gained through my studies, teaching experience and international hackathons. As co-founder of a blockchain non-profit (ASBL), I am always looking to innovate and take on technical challenges.</p> 
+                <p class ="about-text print-only">I have been fortunate to live abroad since the age of four. I attended several international schools in China, Mexico, the Czech Republic and Thailand. These enriching experiences have fed my thirst for knowledge, my natural curiosity, my adaptability and my openness to the world.</p>
+            </section>
+            
+            <section class="experience reveal-content">
+                <h2>Professional Experience</h2>
+
+                <div class="education-item reveal-item">
+                    <h4>Cybersecurity & IT Intern – Technord <p class="date">February 2026 - June 2026 | Tournai, Belgium</p> </h4>
+                    
+                    <p class="description">
+                        Implementation of a vulnerability management automation framework and deployment of security agents across the company's infrastructure.
+                    </p>
+                </div>
+                
+                <div class="experience-item reveal-item">
+                    <h4>Programming Teacher – Logiscool <p class="date">2024 - Present</p> </h4>
+                    
+                    <p class="description">Teaching programming to children and teenagers.</p>
+                </div>
+
+            
+                
+            </section>
+            
+            <section class="education reveal-content">
+                <h2>Education</h2>
+
+                <div class="education-item reveal-item">
+                    <h4>Engineering Degree in Computer Science - CESI <p class="date">2026 - Present</p> </h4>
+                    
+                    <p class="description">First year of the engineering program</p>
+                </div>
+                
+                <div class="education-item reveal-item">
+                    <h4>Bachelor's Degree in Computer Science - HEH <p class="date">2023 - 2026</p> </h4>
+                    
+                    <p class="description">Specialization in networks and telecommunications.</p>
+                </div>
+                
+                <div class="education-item reveal-item">
+                    <h4>Computer Science - University of Mons  <p class="date">2021 - 2023</p></h4>
+                   
+                    <p class="description">Studies in computer science.</p>
+                </div>
+                
+                <div class="education-item reveal-item">
+                    <h4>French Baccalauréat - Lycée Français International of Bangkok <p class="date">2021</p> </h4>
+                    
+                    <p class="description">Specialisms: NSI (Digital and Computer Science) and Mathematics, with the advanced mathematics option.</p>
+                </div>
+            </section>
+            
+            <section class="projects reveal-content">
+                <h2>Projects & Activities</h2>
+                
+                <div class="project-item reveal-item">
+                    <h4>Co-founder - Kryptosphere Belgium <p class="date">2024 - 2026</p> </h4>
+                    
+                    <p class="description">Running a non-profit organization (ASBL) dedicated to blockchain.</p>
+                </div>
+                
+                <div class="project-item reveal-item">
+                    <h4>Blockchain Hackathons <p class="date">2024 - 2025</p> </h4>
+                    
+                    <p class="description">ETH Oxford, ETH Amsterdam, ETH Brussels, École Polytechnique Fédérale de Lausanne (EPFL)</p>
+                </div>
+            </section>
+        </main>        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

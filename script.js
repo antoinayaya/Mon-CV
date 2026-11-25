@@ -1,6 +1,20 @@
 // Déclaration d'une variable globale pour stocker l'instance de ScrollReveal
 let srInstance;
 
+// Langue de la page courante (d'après <html lang="..."> : "fr" ou "en")
+const CURRENT_LANG = document.documentElement.lang.toLowerCase().startsWith("en") ? "en" : "fr";
+
+// Textes et pages associés à chaque langue
+const I18N = {
+    fr: { lightMode: "Mode Clair", darkMode: "Mode Sombre", otherPage: "index-en.html" },
+    en: { lightMode: "Light Mode", darkMode: "Dark Mode", otherPage: "index.html" }
+};
+
+// Changer de langue : ouvre la version de la page dans l'autre langue
+function switchLanguage() {
+    window.location.href = I18N[CURRENT_LANG].otherPage;
+}
+
 // Vérification des préférences système pour le mode sombre
 function checkDarkMode() {
     // Vérifier les préférences système
@@ -32,13 +46,14 @@ function enableDarkMode() {
     const body = document.body;
     const content = document.querySelector(".content");
     const sidebar = document.querySelector(".sidebar");
-    const button = document.querySelector(".toggle-btn");
+    const buttons = document.querySelectorAll(".toggle-btn");
+    const darkModeButton = document.querySelector(".toggle-btn:not(.lang-btn)");
     
     body.classList.add("dark-mode");
     content.classList.add("dark-mode");
     sidebar.classList.add("dark-mode");
-    button.classList.add("dark-mode");
-    button.textContent = "Mode Clair";
+    buttons.forEach(btn => btn.classList.add("dark-mode"));
+    darkModeButton.textContent = I18N[CURRENT_LANG].lightMode;
 }
 
 // Désactive le mode sombre
@@ -46,13 +61,14 @@ function disableDarkMode() {
     const body = document.body;
     const content = document.querySelector(".content");
     const sidebar = document.querySelector(".sidebar");
-    const button = document.querySelector(".toggle-btn");
+    const buttons = document.querySelectorAll(".toggle-btn");
+    const darkModeButton = document.querySelector(".toggle-btn:not(.lang-btn)");
     
     body.classList.remove("dark-mode");
     content.classList.remove("dark-mode");
     sidebar.classList.remove("dark-mode");
-    button.classList.remove("dark-mode");
-    button.textContent = "Mode Sombre";
+    buttons.forEach(btn => btn.classList.remove("dark-mode"));
+    darkModeButton.textContent = I18N[CURRENT_LANG].darkMode;
 }
 
 // Basculer entre les modes
